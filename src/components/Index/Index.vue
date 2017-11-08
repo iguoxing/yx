@@ -79,7 +79,7 @@
                 怡享家用空气净化器将工业级空气净化技术应用到家庭<br>
                 关注的不仅仅是对PM2.5的去除，更关心的是对家庭中各种气态污染物和病毒病菌的去除。
                 </div>
-                <div class="pro-icons x-flex">
+                <div class="pro-icons">
                     <div class="pro-info pro-info-1">
                         <img src="../../assets/img/index/pen.png">
                         <p class="info-des">北京怡享科技发展有限公司前身为工业过滤设备的制造商，在医院手术室，制药车间，博物馆，设备机房等场所的空气净化领域积累了10余年的技术经验。</p>

@@ -249,8 +249,8 @@ html {
   margin-top: 23px;
 }
 .index .pro-des .pro-icons {
-  margin-top: 241px;
-  margin-bottom: 320px;
+  margin: 241px auto 320px;
+  display: inline-flex;
 }
 .index .pro-des .pro-icons .pro-info {
   width: 160px;
@@ -266,9 +266,6 @@ html {
   color: #000000;
   margin-top: 26px;
   text-align: left;
-}
-.index .pro-des .pro-icons .pro-info-1 {
-  margin-left: 127px;
 }
 .index .pro-des .pro-icons .pro-info-2 {
   margin-left: 328px;
