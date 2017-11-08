@@ -1,0 +1,77 @@
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+  -ms-touch-action: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  margin: 0px;
+}
+body .content-wrapper,
+body .right-side,
+.main-footer {
+  margin-left: 240px!important;
+}
+body .content-wrapper.content-shrink {
+  margin-left: 60px!important;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+.hi {
+  font-size: 12px;
+}
+.x-flex {
+  display: flex;
+}
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-col-center {
+  display: flex;
+  align-items: center;
+}
+.display-block {
+  display: block!important;
+}
+.display-none {
+  display: none!important;
+}
+.height-max {
+  height: 100%;
+}
+.margin-left-3 {
+  margin-left: 30px;
+}
+.margin-top-3 {
+  margin-top: 30px;
+}
+.margin-right-3 {
+  margin-right: 30px;
+}
+.no-margin-right {
+  margin-right: 0!important;
+}
+.console-title h5 {
+  float: left;
+}
+.adBottom button {
+  margin-right: 10px;
+}
+.color-green {
+  color: #6ad83d;
+}
+.color-red {
+  color: #ff5d5d;
+}
+.color-orange {
+  color: #fd6920;
+}
