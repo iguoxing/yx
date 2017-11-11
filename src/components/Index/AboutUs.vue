@@ -4,15 +4,15 @@
         <div class="main">
           <div>
             <div class="heading x-flex">
-              <span class="title">售后服务</span>
+              <span class="title">关于我们</span>
             </div>
             <img class="divide" src="../../assets/img/index/rule_right.png">
           </div>
           <div class="endty x-flex">
             <div class="l-menu">
               <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
-                <a @click="changeTab('MyDoubt')"><el-menu-item index="1"><i class="el-icon-question"></i>我的疑惑</el-menu-item></a>
-                <a @click="changeTab('ConnectService')"><el-menu-item index="2"><i class="el-icon-service"></i>联系售后</el-menu-item></a>
+                <a @click="changeTab('ConnectUs')"><el-menu-item index="1"><i class="el-icon-service"></i>联系我们</el-menu-item></a>
+                <a @click="changeTab('OurPromise')"><el-menu-item index="2"><i class="el-icon-document"></i>我们的承诺</el-menu-item></a>
               </el-menu>
             </div>
 
@@ -31,14 +31,14 @@
 <script>
 import Toolbar from '@/components/Base/Toolbar'
 import Foot from '@/components/Base/Foot'
-import ConnectService from '@/components/Index/ConnectService'//联系售后
-import MyDoubt from '@/components/Index/MyDoubt'//我的疑惑
+import ConnectUs from '@/components/Index/ConnectUs'//联系我们
+import OurPromise from '@/components/Index/OurPromise'//我们的承诺
 
 export default {
   data () {
     return {
       activeName: 'first',
-      nowTab:'MyDoubt',
+      nowTab:'ConnectUs',
     }
   },
   methods:{
@@ -57,7 +57,7 @@ export default {
   },
   computed:{},
   components:{
-    Toolbar,Foot,ConnectService,MyDoubt
+    Toolbar,Foot,ConnectUs,OurPromise
   }
 }
 </script>

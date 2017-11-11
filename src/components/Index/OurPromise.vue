@@ -1,12 +1,12 @@
 <template>
     <div class="r-content">
       <el-tabs v-model="activeName">
-        <el-tab-pane label="联系方式" name="first">
+        <el-tab-pane label="我们的承诺" name="first">
           <div class="address-info">
-            联 系 人：张先生<br>
-            售后电话：18612928996<br>
-            售后时间：9:00 - 18:00<br>
-            售后地址：北京市朝阳区慈云寺远洋国际中心6层
+            1 、我们承诺在购物全程照顾您。<br>
+            2 、我们承诺为您提供公平，公正，透明的交易平台。<br>
+            3 、我们承诺在您需要的时候能够快捷地找到我们，我们始终在您身边。<br>
+            4 、我们承诺一心一意地为您提供舒适、满意的服务。
           </div>
         </el-tab-pane>
       </el-tabs>

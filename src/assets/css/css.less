@@ -48,16 +48,25 @@ html {
   html {font-size: 130px !important;}
 }
 
-@media screen and (max-width:1400px) {
-  html {font-size: 125px !important;}
-}
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1680px) {
   html {font-size: 100px !important;}
 }
 
+@media screen and (max-width:1400px) {
+  html {font-size: 95px !important;}
+}
+
+@media screen and (max-width:1198px) {
+  html {font-size: 90px !important;}
+}
+
+@media screen and (max-width:991px) {
+  html {font-size: 80px !important;}
+}
+
 @media screen and (max-width:768px) {
-  html {font-size: 85px !important;}
+  html {font-size: 65px !important;}
 }
 
 @media screen and (max-width:648px) {
@@ -67,6 +76,7 @@ html {
 
 
 // 改写ele
+.el-menu{border-right: none;}
 .el-tabs__item{font-size:18px;}
 
 .heading{
@@ -93,9 +103,10 @@ html {
     .logo{
         position: absolute;
         width: 160px;
-	    height: 67px;
+        height: 67px;
         left: 18%;
         top: 174px;
+        z-index: 2;
     }
 }
 

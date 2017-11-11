@@ -4,6 +4,8 @@ import Hello from '@/components/Hello'
 
 const Index = resolve => require(['@/components/Index/Index'], resolve)
 const Service = resolve => require(['@/components/Index/Service'], resolve)
+const AboutUs = resolve => require(['@/components/Index/AboutUs'], resolve)
+const Share = resolve => require(['@/components/Buy/Share'], resolve)
 const Login = resolve => require(['@/components/Index/Login'], resolve)
 const Goods = resolve => require(['@/components/Index/Goods'], resolve)
 const GoodsInfo = resolve => require(['@/components/Index/GoodsInfo'], resolve)
@@ -31,6 +33,8 @@ export default new Router({
   routes: [
     {path: '/',component: Index,alias: '/index'},//首页
     {path: '/service',component: Service},//售后服务
+    {path: '/us',component: AboutUs},//售后服务
+    {path: '/share',component: Share},//共享计划
     {path: '/login',component: Login},
     {path: '/goods',component: Goods},//产品列表
     {path: '/goods_info',component: GoodsInfo},//商品详情

@@ -6,7 +6,8 @@
               <ul class="x-flex">
                  <li><a href="/goods">产品</a></li>
                  <li><a href="/service">售后服务</a></li>
-                 <li><a href="/goods">关于我们</a></li>
+                 <li><a href="/share">共享计划</a></li>
+                 <li><a href="/us">关于我们</a></li>
                  <li class="user-login"><a href="/login">用户登录</a></li>
                  <!--<li class="user-cart"><img src="../../assets/img/common/cart_white.png"></li>-->
                  <!--<li class="user-person"><img src="../../assets/img/common/person_white.png"></li>-->

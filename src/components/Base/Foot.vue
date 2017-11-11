@@ -2,10 +2,10 @@
     <div class="page_bottom x-flex">
               <div class="left_bottom">
                   <div class="tab_title">
-                      <a>首页</a> |
-                      <a>产品</a> |
-                      <a>售后服务</a> |
-                      <a>联系我们</a>
+                      <a href="/index">首页</a> |
+                      <a href="/goods">产品</a> |
+                      <a href="/service">售后服务</a> |
+                      <a href="/us">联系我们</a>
                   </div>
                   <div class="company-info">
                   Copyright © 2017, Yixiangkeji Co., Ltd. All Rights Reserved.北京怡享科技有限公司  |
@@ -21,7 +21,7 @@
 
 <style lang="less">
 .page_bottom{
-    width: 1184px;
+    // width: 1184px;
     height: 174px;
     margin: 0 auto;
     text-align: left;
