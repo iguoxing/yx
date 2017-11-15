@@ -2,11 +2,10 @@
 <!-- <h1>{{msg}}</h1> -->
     <div id="goods_info" class="goods-info">
         <toolbar></toolbar>
-
         <div class="main flex-row-left">
             <div class="buy">
                 <img src="../../assets/img/goods/p_1.jpg">
-                <a class="buy-now"  style="text-decoration: none;">立即购买</a>
+                <a @click.stop="routerLink('check')" class="buy-now"  style="text-decoration: none;">立即购买</a>
             </div>
             <img src="../../assets/img/goods/p_2.jpg">
             <img src="../../assets/img/goods/p_3.jpg">
@@ -14,12 +13,7 @@
             <img src="../../assets/img/goods/p_5.jpg">
             <img src="../../assets/img/goods/p_6.jpg">
         </div>
-
-
-
-
         <foot></foot>
-
     </div>
 </template>
 
@@ -33,7 +27,11 @@ export default {
       msg: 'Welcome'
     }
   },
-  methods:{},
+  methods:{
+    routerLink(route) {
+      this.$router.push(route)
+    },
+  },
   computed:{},
   components:{
     Toolbar,Foot

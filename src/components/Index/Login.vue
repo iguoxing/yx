@@ -16,7 +16,7 @@
                  <a class="get_code">获取验证码</a>
                </div>
                <div class="login_now form-group">
-                 <button class="btn btn-primary">立即登录</button>
+                 <a class="btn btn-primary" @click.stop="routerLink('/enter')">立即登录</a>
                </div>
             </form>
         </div>
@@ -37,7 +37,11 @@ export default {
       msg: 'Welcome'
     }
   },
-  methods:{},
+  methods:{
+    routerLink(route) {
+      this.$router.push(route)
+    },
+  },
   computed:{},
   components:{
     Toolbar,Foot

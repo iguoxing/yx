@@ -4,7 +4,7 @@
         <!--<buy></buy>-->
         <div class="main">
             <div>
-              <el-carousel height="5.60rem">
+              <el-carousel height="7.3rem">
                 <el-carousel-item v-for="item in bannerList" :key="item.id">
                   <!-- <h3>{{ item.img }}</h3> -->
                   <img class="banner" :src="item.img">
@@ -34,30 +34,30 @@
         </div>
         <div class="pro-usr x-flex">
             <div class="pro-test">
-                <div class="pro-title">产品测评</div>
+                <div class="pro-title" @click.stop="routerLink('/article/list')">产品测评</div>
                 <img class="divide-line" src="../../assets/img/index/rule_left.png">
                 <div class="pro-list flex-wrap">
-                    <div class="test-info">
+                    <div class="test-info" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">净化器获奖</p>
                     </div>
-                    <div class="test-info">
+                    <div class="test-info" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">明星企业</p>
                     </div>
-                    <div class="test-info no-margin-right">
+                    <div class="test-info no-margin-right" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">明星企业</p>
                     </div>
-                    <div class="test-info">
+                    <div class="test-info" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">明星企业</p>
                     </div>
-                    <div class="test-info">
+                    <div class="test-info" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">明星企业</p>
                     </div>
-                    <div class="test-info no-margin-right">
+                    <div class="test-info no-margin-right" @click.stop="routerLink('/article')">
                         <img src="../../assets/img/index/logo_yx.png">
                         <p class="test-title">明星企业</p>
                     </div>
@@ -137,6 +137,11 @@ export default {
         {id:1,img:require('../../assets/img/index/banner.png')},
         {id:2,img:require('../../assets/img/index/product.png')},
       ]
+    }
+  },
+  methods: {
+    routerLink(route){
+      this.$router.push(route);
     }
   },
   components:{

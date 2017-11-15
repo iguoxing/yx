@@ -36,8 +36,6 @@ export default {
 .el-select .el-input__inner{width:120px;}
 .address-info{
   margin-top:16px;
-  font-size: 18px;
-  line-height: 1.8;
 }
 
 </style>

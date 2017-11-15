@@ -1,20 +1,38 @@
 <template>
     <div class="head">
             <div class="title flex-row-center">
-              <a href="/index"><img src="../../assets/img/index/logo.png"></a>
+              <a @click.stop="routerLink('/index')"><img src="../../assets/img/index/logo.png"></a>
               <!--<img src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/head_tree.png">-->
               <ul class="x-flex">
-                 <li><a href="/goods">产品</a></li>
-                 <li><a href="/service">售后服务</a></li>
-                 <li><a href="/share">共享计划</a></li>
-                 <li><a href="/us">关于我们</a></li>
-                 <li class="user-login"><a href="/login">用户登录</a></li>
+                 <li><a @click.stop="routerLink('/goods')">产品</a></li>
+                 <li><a @click.stop="routerLink('/service')">售后服务</a></li>
+                 <li><a @click.stop="routerLink('/share')">共享计划</a></li>
+                 <li><a @click.stop="routerLink('/us')">关于我们</a></li>
+                 <li class="user-login"><a @click.stop="routerLink('/login')">用户登录</a></li>
                  <!--<li class="user-cart"><img src="../../assets/img/common/cart_white.png"></li>-->
                  <!--<li class="user-person"><img src="../../assets/img/common/person_white.png"></li>-->
               </ul>
             </div>
         </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      msg: '怡享',
+    }
+  },
+  methods:{
+    routerLink(route) {
+      this.$router.push(route)
+    },
+  },
+  computed:{},
+  components:{}
+}
+</script>
+
 <style scoped>
   @import "../../assets/css/css.css";
 </style>
@@ -28,8 +46,9 @@
     padding: 28px 0px;
     .title{
         img{
-            width: 33px;
-	        height: 38px;
+          width: 33px;
+          height: 38px;
+          cursor: pointer;
 	        // background-color: rgba(167, 167, 167, 1);
         }
         ul{
@@ -39,6 +58,7 @@
                 margin: 12px 30px 0 0 ;
                 height: 24px;
                 a{color: #fff;}
+                cursor: pointer;
                 a:hover{color: #a7a7a7;}
             }
             li.user-login{
@@ -65,14 +85,4 @@
 </style>
 
 
-<script>
-export default {
-  name: 'index',
-  data () {
-    return {
-      msg: 'Welcome'
-    }
-  }
-}
-</script>
 

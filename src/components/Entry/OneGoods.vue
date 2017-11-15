@@ -27,7 +27,7 @@
       </div>
       <div class="r-btn">
         <a class="cancel">取消订单</a>
-        <a class="buy">去支付</a>
+        <a class="buy" @click.stop="routerLink('/check')">去支付</a>
       </div>
     </div>
 </template>
@@ -36,7 +36,11 @@
 
 export default {
   data () {},
-  methods:{},
+  methods:{
+    routerLink(route) {
+      this.$router.push(route)
+    },
+  },
   computed:{},
   components:{}
 }
@@ -70,13 +74,15 @@ export default {
       color: #7e7e7e;
       padding-bottom:6px;
       border-bottom:1px solid #7e7e7e;
+      cursor: pointer;
     }
     .buy{
       background-color: rgba(240, 72, 39, 1);
       border-radius: 10px;
       font-size: 16px;
       color: #fcfcfc;
-      padding: 7px 12px;;
+      padding: 7px 12px;
+      cursor: pointer;
     }
   }
 }

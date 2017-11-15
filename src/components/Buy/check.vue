@@ -1,5 +1,5 @@
 <template>
-    <div class="cart">
+    <div id="cart" class="cart">
         <toolbar></toolbar>
         <div class="main">
           <div class="heading x-flex">
@@ -9,9 +9,13 @@
           <img class="divide" src="../../assets/img/index/rule_right.png">
           <div class="sec-title">商品信息</div>
           <one-goods></one-goods>
-          <one-goods></one-goods>
+          <div class="address-info">
+            地址：北京市朝阳区慈云寺远洋国际中心6层<br>
+            收件人：张先生<br>
+            电话：18612928996<br>
+          </div>
           <div class="balance">
-            <a class="settlement" @click.stop="routerLink('/check')">结算</a>
+            <div class="settlement">付款</div>
           </div>
         </div>
         <foot></foot>
@@ -29,11 +33,7 @@ export default {
       msg: 'Welcome'
     }
   },
-  methods:{
-    routerLink(route) {
-      this.$router.push(route)
-    },
-  },
+  methods:{},
   computed:{},
   components:{
     OneGoods,Toolbar,Foot
@@ -44,27 +44,3 @@ export default {
 <style scoped>
  @import "../../assets/css/css.css";
 </style>
-
-<style lang="less">
-.cart{
-  .main{
-    .sec-title{font-size: 18px;color: #010101;margin-top: 58px;margin-bottom: 30px;}
-    .balance{
-      display: flex;
-      flex-direction: row-reverse;
-      margin-bottom: 150px;
-      .settlement{
-        width: 101px;
-        font-size: 28px;
-        padding: 13px 22px;
-        background-color: rgba(240, 72, 39, 1);
-        border-radius: 10px;
-        color:#fcfcfc;
-        cursor: pointer;
-      }
-    }
-
-  }
-}
-</style>
-

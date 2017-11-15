@@ -1,5 +1,5 @@
 <template>
-    <div class="page_bottom x-flex">
+    <div class="page_bottom flex-row-center">
               <div class="left_bottom">
                   <div class="tab_title">
                       <a href="/index">首页</a> |
