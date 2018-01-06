@@ -46,13 +46,13 @@ const routes = [
     { path: '/enter', component: Entry }
 ]
 
-const Router = new VueRouter({
+const router = new VueRouter({
     linkActiveClass: 'active',
     mode: 'history',
     routes
 })
 
-export default Router;
+export default router;
 
 // 创建根实例
 // new Vue({

@@ -1,19 +1,14 @@
 <template>
     <div id="example" class="index">
         <toolbar></toolbar>
-        <!--<buy></buy>-->
         <div class="main">
             <div>
               <el-carousel height="7.3rem">
                 <el-carousel-item v-for="item in bannerList" :key="item.id">
-                  <!-- <h3>{{ item.img }}</h3> -->
                   <img class="banner" :src="item.img">
                 </el-carousel-item>
               </el-carousel>
             </div>
-            <!-- <img class="banner" src="../../assets/img/index/banner.png"> -->
-            <!-- <img class="banner" src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/banner.png">
-            <img class="logo" src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/logo_yx.png">-->
             <img class="logo" src="../../assets/img/index/logo_yx.png">
         </div>
         <div class="img-list">
@@ -127,6 +122,7 @@
 <script>
 import Toolbar from '@/components/Base/Toolbar'
 import Foot from '@/components/Base/Foot'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'index',
@@ -134,12 +130,30 @@ export default {
     return {
       msg: 'Welcome',
       bannerList:[
+        // {id:1,img:require('https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/img/index/banner.png')},
         {id:1,img:require('../../assets/img/index/banner.png')},
         {id:2,img:require('../../assets/img/index/product.png')},
       ]
     }
   },
+  created(){
+    this.getPlayClick()
+  },
+  computed: {
+     ...mapGetters({
+            playClickResult:'playClickResult',
+        })
+  },
   methods: {
+    ...mapActions(['getPlayClick']),
+    test(val){
+      console.log(val)
+      // this.getPlayClick().then(data=>{
+      //   console.log('data')
+      //   console.log(data)
+      //   console.log('data')
+      // })
+    },
     routerLink(route){
       this.$router.push(route);
     }
