@@ -3,7 +3,7 @@
         <toolbar></toolbar>
         <div class="main">
             <div>
-              <el-carousel height="7.3rem">
+              <el-carousel height="6.9rem">
                 <el-carousel-item v-for="item in bannerList" :key="item.id">
                   <img class="banner" :src="item.img">
                 </el-carousel-item>
@@ -167,4 +167,208 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
  @import "../../assets/css/css.css";
+</style>
+<style lang="less">
+ .index {
+    .main {
+        .banner {
+            width: 100%;
+        }
+        .logo {
+            position: absolute;
+            width: 1.6rem;
+            height: 0.67rem;
+            left: 18%;
+            top: 1.74rem;
+            z-index: 2;
+        }
+    }
+    .img-list {
+        .img-info {
+            width: 11.9rem;
+            height: 6.9rem;
+            margin: 0.25rem auto 0;
+            display: flex;
+            justify-content: baseline;
+            flex-direction: column;
+            .first-title {
+                font-size: 0.36rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 0;
+                color: #1b1b1b;
+                margin-top: 0.5rem;
+            }
+            .second-title {
+                font-size: 0.18rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.28rem;
+                letter-spacing: 0;
+                color: #1b1b1b;
+                margin-top: 0.2rem;
+            }
+            .apply-now {
+                font-size: 0.24rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.2rem;
+                letter-spacing: 0;
+                color: #3abad7;
+                margin-top: 0.37rem;
+            }
+            .apply-now:hover {
+                color: #10d3ff
+            }
+        }
+        .img-info-1 {
+            background: url(../../assets/img/index/plan.png) no-repeat center;
+            background-size: 11.9rem 6.9rem;
+        }
+        .img-info-2 {
+            background: url(../../assets/img/index/product.png) no-repeat center;
+            background-size: 11.9rem 6.9rem;
+            .first-title {
+                color: #080808;
+            }
+        }
+    }
+    .pro-usr {
+        width: 11.9rem;
+        background-color: rgba(30, 30, 30, 1);
+        padding: 0.56rem 0 0.5rem;
+        margin: 0 auto;
+        .pro-test {
+            margin-left: 0.6rem;
+            margin-right: 0.6rem;
+            text-align: left;
+            .pro-title {
+                font-family: AdobeHeitiStd-Regular;
+                font-size: 0.18rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 0;
+                color: #fff;
+            }
+            .divide-line {
+                width: 6.6rem;
+                height: 0.03rem;
+            }
+            .pro-list {
+                width: 6.6rem;
+                .test-info {
+                    margin: 0.27rem 0.3rem 0.1rem 0;
+                    cursor: pointer;
+                    img {
+                        width: 2rem;
+                        height: 1.5rem;
+                        background-color: rgba(68, 68, 68, 1);
+                    }
+                    .test-title {
+                        font-size: 0.16rem;
+                        color: #b6b6b6;
+                    }
+                }
+            }
+        }
+        .user-back {
+            text-align: left;
+            .user-title {
+                font-family: AdobeHeitiStd-Regular;
+                font-size: 0.18rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 0;
+                color: #fff;
+            }
+            .divide-line {
+                width: 3.5rem;
+                height: 0.03rem;
+            }
+            .user-weibo {
+                margin: 0.24rem 0.2rem 0 0;
+                width: 2.27rem;
+                height: 3.73rem;
+            }
+            .go-know {
+                font-size: 0.18rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.2rem;
+                letter-spacing: 0;
+                color: #3abad7;
+                margin: 1.32rem 0 2.53rem 0.45rem;
+            }
+        }
+    }
+    .pro-des {
+        margin: 0 auto;
+        .des-title {
+            font-size: 0.45rem;
+            color: #444444;
+            margin-top: 2rem;
+        }
+        .des-info {
+            font-size: 0.18rem;
+            line-height: 0.28rem;
+            letter-spacing: 0.004rem;
+            color: #444;
+            margin-top: 0.23rem;
+        }
+        .pro-icons {
+            // margin: 2.41rem auto 3.2rem;
+            margin: 1.2rem auto 2rem;
+            display: inline-flex;
+            .pro-info {
+                width: 1.6rem;
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                }
+                .info-des {
+                    font-size: 0.14rem;
+                    line-height: 0.2rem;
+                    letter-spacing: 0;
+                    color: #000000;
+                    margin-top: 0.26rem;
+                    text-align: left;
+                }
+            }
+            .pro-info-2 {
+                margin-left: 3.58rem;
+            }
+            .pro-info-3 {
+                margin-left: 3.52rem;
+            }
+        }
+    }
+    .about-us {
+        background: url(../../assets/img/index/us.png) no-repeat center;
+        background-size: 100%;
+        padding-bottom: 0.2rem;
+        .title {
+            font-size: 0.36rem;
+            color: #fff;
+            padding-top: 0.6rem;
+        }
+        .us-info {
+            margin: 0.45rem auto 0.15rem;
+            .us-des {
+                width: 2.88rem;
+                .des {
+                    margin-top: 0.3rem;
+                    padding-bottom: 0.2rem;
+                    color: #fff;
+                    font-size: 0.2rem;
+                }
+            }
+        }
+    }
+}
 </style>
