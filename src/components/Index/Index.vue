@@ -99,7 +99,7 @@
                   010-400-707-8889
                 </div>
             </div>
-            <div class="us-des">
+            <div class="us-des yx-postion">
                 <img src="../../assets/img/index/icon-wechat.png">
                 <div class="des">
                   <img src="../../assets/img/index/icon-QR.png">
@@ -108,7 +108,8 @@
             <div class="us-des">
                 <img src="../../assets/img/index/icon-site.png">
                 <div class="des">
-                  北京经济技术开发区科创十二街鸿坤云时代B座二层
+                  北京市朝阳区慈云寺
+                  远洋国际中心6层
                 </div>
             </div>
           </div>
@@ -360,7 +361,7 @@ export default {
         .us-info {
             margin: 0.45rem auto 0.15rem;
             .us-des {
-                width: 2.88rem;
+                width: 2rem;
                 .des {
                     margin-top: 0.3rem;
                     padding-bottom: 0.2rem;
@@ -368,6 +369,7 @@ export default {
                     font-size: 0.2rem;
                 }
             }
+            .us-des.yx-postion{margin: 0 3rem;}
         }
     }
 }
