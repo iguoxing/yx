@@ -24,11 +24,12 @@
               </div>
               <div class="goods-num info">
                 <label class="title">数量</label>
-                <div class="num">
+                <el-input-number v-model="num1" @change="handleChange" :min="1" :max="100" label="数量"></el-input-number>
+                <!-- <div class="num">
                   <span class="reduce">-</span>
                   <span class="des">1</span>
                   <span class="add">+</span>
-                </div>
+                </div> -->
               </div>
               <div class="promise info">
                 <label class="title">承诺</label>
@@ -54,13 +55,17 @@ export default {
   name: 'index',
   data () {
     return {
-      msg: 'Welcome'
+      msg: 'Welcome',
+      num1: 1
     }
   },
   methods:{
     routerLink(route) {
       this.$router.push(route)
     },
+    handleChange(value) {
+        console.log(value);
+    }
   },
   computed:{},
   components:{
@@ -71,32 +76,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
- /*@import "../../assets/css/base.css";*/
  @import "../../assets/css/css.css";
 </style>
 <style lang="less">
 .goods-one{
   .main{
-    padding-top: 76px;
-    padding-bottom:188px;
+    padding-top: 0.76rem;
+    padding-bottom:1.88rem;
     margin: 0 auto;
     .left-show{
       a{cursor: pointer;}
       display:inline-block;
-      margin-right: 66px;
-      width: 690px;
+      margin-right: 0.66rem;
+      width: 6.9rem;
       .img{
-        width: 690px;
-        height: 533px;
+        width: 6.9rem;
+        height: 5.33rem;
       }
       .title{
-        font-size: 24px;
+        font-size: 0.24rem;
         color: #202020;
-        margin-top: 26px;
+        margin-top: 0.26rem;
         text-align: left;
       }
       .info{
-        font-size: 18px;
+        font-size: 0.18rem;
         text-align: left;
         a{color: #3abad7;}
       }
@@ -106,10 +110,10 @@ export default {
         display:flex;
         align-items: center;
         .title{
-          font-size: 16px;
+          font-size: 0.16rem;
           color: #646464;
-          margin-right: 38px;
-          width: 50px;
+          margin-right: 0.38rem;
+          width: 0.5rem;
           text-align: left;
         }
 
@@ -117,33 +121,33 @@ export default {
       .orgin-prise{
         .num{
           color: #f04827;
-          font-size: 27px;
+          font-size: 0.27rem;
           text-decoration:line-through;
-          .sign{font-size: 22px;}
+          .sign{font-size: 0.22rem;}
         }
       }
       .share-prise{
-        margin-top: 29px;
+        margin-top: 0.29rem;
         .num{
           color: #f04827;
-          font-size: 36px;
-          .sign{font-size: 30px;}
-          .des{font-size: 18px;}
+          font-size: 0.36rem;
+          .sign{font-size: 0.3rem;}
+          .des{font-size: 0.18rem;}
         }
       }
-      .goods-intro,.goods-num,.promise{margin-top: 46px;}
+      .goods-intro,.goods-num,.promise{margin-top: 0.46rem;}
       .goods-intro{
-        .des{font-size: 18px;color: #3abad7;cursor: pointer;}
+        .des{font-size: 0.18rem;color: #3abad7;cursor: pointer;}
       }
       .goods-num{
         .num{
-          border:1px solid rgba(182, 182, 182,1);
-          .des{width: 60px;display: inline-block;font-size: 22px;}
+          border:0.01rem solid rgba(182, 182, 182,1);
+          .des{width: 0.6rem;display: inline-block;font-size: 0.22rem;}
           .reduce,.add{
-            font-size: 24px;
+            font-size: 0.24rem;
             background: rgba(182, 182, 182,1);
-            width:34px;
-            height: 34px;
+            width:0.34rem;
+            height: 0.34rem;
             color:#fff;
             display: inline-block;
           }
@@ -151,27 +155,27 @@ export default {
         }
       }
       .promise{
-        .des{font-size: 18px;text-align: left;}
+        .des{font-size: 0.18rem;text-align: left;}
       }
       .btn-buy{
-        margin-top: 180px;
+        margin-top: 1.8rem;
         .ready-buy{
           a{cursor: pointer;}
           .cart,.buy{
-            height: 52px;
-            border-radius: 10px;
-            font-size: 22px;
-            padding:10px 12px;
+            height: 0.52rem;
+            border-radius: 0.1rem;
+            font-size: 0.22rem;
+            padding:0.1rem 0.12rem;
             cursor: pointer;
           }
           .cart{
-            border: solid 1px rgba(49, 49, 49, 1);
-            margin-right: 32px;
+            border: solid 0.01rem rgba(49, 49, 49, 1);
+            margin-right: 0.32rem;
             color: #000;
           }
           .buy{
             background-color: rgba(240, 72, 39, 1);
-            border-radius: 10px;
+            border-radius: 0.1rem;
             color: #fff;
           }
         }

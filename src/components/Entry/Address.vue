@@ -3,7 +3,7 @@
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="我的收货地址" name="first">
           <el-row :gutter="20">
-            <el-col :span="16">
+            <el-col :span="14">
               <div class="grid-content bg-purple">
                 <div class="address-info">
                   北京市朝阳区东四环中路远洋国际中心A座六层1212室<br>
@@ -11,8 +11,8 @@
                 </div>
               </div>
             </el-col>
-            <el-col :span="2"><div class="grid-content bg-purple"><el-button icon="edit" size="small"></el-button></div></el-col>
-            <el-col :span="2"><div class="grid-content bg-purple"><el-button icon="delete" size="small"></el-button></div></el-col>
+            <el-col :span="2"><div class="grid-content bg-purple"><el-button icon="el-icon-edit" size="small"></el-button></div></el-col>
+            <el-col :span="2"><div class="grid-content bg-purple"><el-button icon="el-icon-delete" size="small"></el-button></div></el-col>
             <el-col :span="2"><div class="grid-content bg-purple"><el-button size="small">设为默认</el-button></div></el-col>
           </el-row>
 
@@ -100,11 +100,11 @@ export default {
   @import "../../assets/css/css.css";
 </style>
 <style lang="less">
-
 .el-input__inner{width:88%;}
 .el-select .el-input__inner{width:120px;}
 .address-info{
   font-size: 16px;
+  margin-top: 0;
 }
 
 .wait-pay{

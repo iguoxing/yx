@@ -78,27 +78,27 @@ export default {
 <style lang="less">
 
 .l-menu{
-  width:338px;
+  width:3.38rem;
   .el-menu{
     background: #fff;
-    .el-menu-item, .el-submenu__title{font-size:20px;}
+    .el-menu-item, .el-submenu__title{font-size:0.2rem;}
     }
 }
 .wait-pay{
   .main{
     .endty{
-      margin-top:60px;
-      margin-bottom: 180px;
+      margin-top:0.6rem;
+      margin-bottom: 1.8rem;
       .divider{
-        width: 757px;
-        height: 1px;
+        width: 7.57rem;
+        height: 0.01rem;
         background-color: #d1dbe5;
-        margin-top: 60px;
+        margin-top: 0.6rem;
       }
       .no-order{
         color:#99A9BF;
-        font-size:18px;
-        margin-top:60px;
+        font-size:0.18rem;
+        margin-top:0.6rem;
       }
     }
   }

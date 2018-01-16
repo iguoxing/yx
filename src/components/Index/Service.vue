@@ -70,36 +70,36 @@ export default {
 .wait-pay{
   .main{
     .endty{
-      margin-top:60px;
-      margin-bottom: 180px;
+      margin-top:0.6rem;
+      margin-bottom: 1.8rem;
       .divider{
-        width: 757px;
-        height: 1px;
+        width: 7.57rem;
+        height: 0.01rem;
         background-color: #d1dbe5;
-        margin-top: 60px;
+        margin-top: 0.6rem;
       }
       .no-order{
         color:#99A9BF;
-        font-size:18px;
-        margin-top:60px;
+        font-size:0.18rem;
+        margin-top:0.6rem;
       }
     }
   }
 }
 
-.divide{margin-top: 24px;width:338px;}
+.divide{margin-top: 0.24rem;width:3.38rem;}
 
 .l-menu{
-  width:338px;
+  width:3.38rem;
   .el-menu{
     background: #fff;
-    .el-menu-item, .el-submenu__title{font-size:20px;}
+    .el-menu-item, .el-submenu__title{font-size:0.2rem;}
     }
 }
 
-.r-content{width: 757px;}
+.r-content{width: 8.57rem;}
 .el-input__inner{width:88%;}
-.el-select .el-input__inner{width:120px;}
+.el-select .el-input__inner{width:1.2rem;}
 
 
 </style>

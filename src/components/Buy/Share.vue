@@ -51,6 +51,9 @@
                     <p class="f">微信扫一扫</p>
                     <p class="s">立即申请</p>
                   </div>
+                  <!-- <div class="buynow">立即购买</div> -->
+
+                  <a @click.stop="routerLink('goods')" style="text-decoration: none;"><el-button type="danger" round>立即购买</el-button></a>
                 </div>
               </el-col>
               <el-col class="right" :span="4">
@@ -73,7 +76,11 @@ export default {
       msg: '共享计划',
     }
   },
-  methods:{},
+  methods:{
+    routerLink(route) {
+      this.$router.push(route)
+    },
+  },
   computed:{},
   components:{
     Toolbar,Foot
@@ -142,10 +149,11 @@ export default {
             .f{letter-spacing: -0.01rem;}
             .s{letter-spacing: 0.07rem;margin-bottom: 0;}
           }
+          .el-button--danger{margin-left:1.1rem;}
         }
       }
       .right{
-        .pic{margin-top: 0.88rem}
+        .pic{margin-top: 0.88rem;margin-left: 0.6rem;}
       }
     }
   }

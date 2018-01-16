@@ -42,39 +42,38 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
- /*@import "../../assets/css/base.css";*/
  @import "../../assets/css/css.css";
 </style>
 <style lang="less">
 .goods{
     .main{
-        margin: 118px auto 233px;
-        width: 1184px;
+        margin: 1.18rem auto 1.8rem;
+        width: 11.9rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: left;
-        .left-goods{margin-right: 190px;}
+        .left-goods{margin-right: 1.92rem;}
         .goods-info{
-            width: 497px;
-            height: 475px;
-            margin-top: 30px;
+            width: 4.97rem;
+            height: 4.75rem;
+            margin-top: 0.3rem;
             cursor: pointer;
             img{
-                width: 497px;
-                height: 385px;
+                width: 4.97rem;
+                height: 3.85rem;
             }
             .goods-title{
-                font-size: 18px;
-                line-height: 24px;
+                font-size: 0.18rem;
+                line-height: 0.24rem;
                 color: #202020;
-                margin-top: 19px;
+                margin-top: 0.19rem;
             }
             .buy-now{
-                font-size: 18px;
-                line-height: 20px;
+                font-size: 0.18rem;
+                line-height: 0.2rem;
                 color: #3abad7;
-                margin-top:23px;
+                margin-top:0.23rem;
             }
         }
     }

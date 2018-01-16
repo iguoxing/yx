@@ -43,3 +43,35 @@ export default {
 <style scoped>
  @import "../../assets/css/css.css";
 </style>
+<style lang="less">
+.goods-info {
+    img{width:10rem;}
+    .main {
+        .buy {
+            position: relative;
+            .buy-now {
+                position: absolute;
+                top: 11.6rem;
+                left: 50%;
+                margin-left: -1rem;
+                width: 2rem;
+                height: 0.6rem;
+                font-size: 0.23rem;
+                color: #fff;
+                border-radius: 0.66rem;
+                background: red;
+                padding: 0.14rem 0.2rem;
+                letter-spacing: 0.02rem;
+                cursor: pointer;
+            }
+            a:link,
+            a:hover,
+            a:visited {
+                text-decoration: none;
+                background-color: #fd6565;
+            }
+        }
+    }
+}
+</style>
+

@@ -43,41 +43,42 @@ export default {
     // height: 94px;
     background-color: rgba(0, 0, 0, 1);
     color: #fff;
-    padding: 28px 0px;
+    padding: 0.28rem 0;
     .title{
         img{
-          width: 33px;
-          height: 38px;
+          width: 0.33rem;
+          height: 0.38rem;
           cursor: pointer;
 	        // background-color: rgba(167, 167, 167, 1);
         }
         ul{
-            margin-left: 28px;
+            margin-left: 0.6rem;
             margin-top: 0;
             li{
-                margin: 12px 30px 0 0 ;
-                height: 24px;
+                margin: 0.12rem 0.6rem 0 0 ;
+                height: 0.24rem;
                 a{color: #fff;}
                 cursor: pointer;
                 a:hover{color: #a7a7a7;}
             }
             li.user-login{
-                font-size: 16px;
+              font-size: 0.16rem;
 	            font-weight: normal;
 	            font-style: normal;
 	            font-stretch: normal;
-	            letter-spacing: 0px;
+	            letter-spacing: 0;
 	            color: #ffffff;
-                margin-left: 396px;;
-                padding-bottom: 8px;
-                border-bottom: 1px solid #fff;
+              margin-left: 6rem;
+              margin-right:0;
+              padding-bottom: 0.08rem;
+              border-bottom: 0.01rem solid #fff;
             }
             li.user-cart{
-              margin-left: 313px;
-              margin-top: 0px
+              margin-left: 3.13rem;
+              margin-top: 0;
             }
             li.user-person{
-              margin: 0 0 0 69px;
+              margin: 0 0 0 0.69rem;
             }
            }
     }
