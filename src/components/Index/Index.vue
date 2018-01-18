@@ -12,12 +12,20 @@
             <img class="logo" src="../../assets/img/index/logo_yx.png">
         </div>
         <div class="img-list">
+            <!--<div class="display-video">
+              <video src="https://air-yx.oss-cn-hangzhou.aliyuncs.com/assets/video/yixiang.mp4" controls="controls" autoplay="autoplay">
+                  您的浏览器不支持 video 标签。
+              </video>
+            </div>-->
+            <div></div>
             <div class="img-info img-info-1">
                 <div class="first-title">净化器共享计划</div>
                 <div class="second-title">1200元（滤芯）+ 1000元（押金）<br>
                   您只需要支付一个滤芯的价格，就可带走整台空气净化器
                 </div>
                 <a class="apply-now">立即申请></a>
+
+
             </div>
             <div class="img-info img-info-2">
                 <div class="first-title"> 共享净化器 怡享好空气  </div>
@@ -185,6 +193,13 @@ export default {
         }
     }
     .img-list {
+        .display-video{
+          margin-top:0.3rem;
+          video{
+            width: 11.9rem;
+            height: 6.9rem;
+          }
+        }
         .img-info {
             width: 11.9rem;
             height: 6.9rem;
